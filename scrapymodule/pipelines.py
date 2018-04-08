@@ -666,12 +666,12 @@ class School1UpdatePipeline(InsertMysql):
         # self.close()
         return item
 
-# 自己本地的数据库
+# 自己本地的数据库2018/03/29 修改表tmp_shool_major_copy
 class SchoolPipelineLocal(InsertMysql):
     def process_item(self, item, spider):
         sql = "insert into tmp_school_major_copy(university, country, city, website, department, programme, degree_level, " \
               "degree_type, ucas_code, mode, application_date, deadline, start_date, degree_description, " \
-              "overview, duration, modules, application_fee, tuition_fee, teaching, assessment, career, location, " \
+              "overview, duration, modules, application_fee, tuition_fee, create_person, teaching_assessment, career, location, " \
               "entry_requirements, chinese_requirements, ATAS, GPA, average_score, accredited_university, Alevel, " \
               "IB, IELTS, IELTS_L, IELTS_S, IELTS_R, IELTS_W, TOEFL, TOEFL_L, TOEFL_S, TOEFL_R, TOEFL_W, GRE, GMAT," \
               " LSAT, MCAT, working_experience, interview, portfolio, application_documents, how_to_apply, school_test, " \
@@ -683,8 +683,8 @@ class SchoolPipelineLocal(InsertMysql):
                                       item["department"], item["programme"], item["degree_level"], item["degree_type"],
                                       item["ucas_code"], item["mode"], item["application_date"], item["deadline"],
                                       item["start_date"], item["degree_description"], item["overview"], item["duration"],
-                                      item["modules"], item["application_fee"], item["tuition_fee"], item["teaching"],
-                                      item["assessment"], item["career"], item["location"], item["entry_requirements"],
+                                      item["modules"], item["application_fee"], item["tuition_fee"], item["create_person"],
+                                      item["teaching_assessment"], item["career"], item["location"], item["entry_requirements"],
                                       item["chinese_requirements"], item["ATAS"], item["GPA"], item["average_score"],
                                       item["accredited_university"], item["Alevel"], item["IB"], item["IELTS"],
                                       item["IELTS_L"], item["IELTS_S"], item["IELTS_R"], item["IELTS_W"], item["TOEFL"],
