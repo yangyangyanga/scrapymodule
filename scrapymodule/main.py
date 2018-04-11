@@ -42,7 +42,7 @@ from scrapy import cmdline
 # cmdline.execute("scrapy crawl strathMasters".split())
 # cmdline.execute("scrapy crawl kingsMasters".split())
 # cmdline.execute("scrapy crawl ntuMaster".split())
-cmdline.execute("scrapy crawl swanseaMaster".split())
+# cmdline.execute("scrapy crawl swanseaMaster".split())
 # cmdline.execute("scrapy crawl plymouthMaster".split())
 # cmdline.execute("scrapy crawl readingBen".split())
 # cmdline.execute("scrapy crawl readingMasters".split())
@@ -52,6 +52,9 @@ cmdline.execute("scrapy crawl swanseaMaster".split())
 # cmdline.execute("scrapy crawl loughboroughMasters".split())
 # cmdline.execute("scrapy crawl swanseaBen".split())
 # cmdline.execute("scrapy crawl essexBen".split())
+# cmdline.execute("scrapy crawl ICMaster".split())
+cmdline.execute("scrapy crawl queensBen".split())
+
 
 list1 = ["Accounting and Finance (MSc)",
 "Accounting and Society (Online Distance Learning) (MSc)",
